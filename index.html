@@ -1,123 +1,161 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS PREDICTION </title>
-    <!-- Existing CSS links -->
-    <!-- Head me add kare -->
-    <!-- Existing CSS and fonts -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <link href="css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GARUD FIXER - Premium Portfolio</title>
 
-    <!-- Facebook Meta Pixel -->
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1896030701303478');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1896030701303478&ev=PageView&noscript=1"
-/></noscript>
-    <!-- End Meta Pixel Code -->
-    <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=823691553375205&ev=PageView&noscript=1"/>
-  </noscript>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: { sans: ['Poppins', 'sans-serif'] }
+}
+}
+}
+</script>
+
+<style>
+@keyframes gradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+background-size: 200% 200%;
+animation: gradient 5s ease infinite;
+}
+
+.glass {
+background: rgba(0,0,0,0.4);
+backdrop-filter: blur(22px);
+border: 1px solid rgba(255,255,255,0.15);
+}
+
+.glow {
+box-shadow: 0 0 35px rgba(255,180,0,.7), 0 0 90px rgba(255,80,0,.45);
+}
+
+.pulse-btn {
+animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.06); }
+100% { transform: scale(1); }
+}
+
+.shine:hover {
+filter: brightness(1.2);
+transform: scale(1.05);
+transition: .3s;
+}
+</style>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1227475199310706');
+fbq('trackSingle','1227475199310706','PageView');
+</script>
+
 </head>
+<body class="bg-black min-h-screen text-white">
 
+<!-- Background -->
+<div class="fixed inset-0">
+<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2000" class="w-full h-full object-cover opacity-35">
+<div class="absolute inset-0 bg-gradient-to-br from-yellow-900/90 via-black/70 to-orange-900/90"></div>
+</div>
 
+<div class="relative z-10 flex justify-center items-center min-h-screen p-4">
 
+<div class="glass max-w-lg w-full rounded-[2rem] p-7 shadow-2xl">
 
-<!-- Meta Pixel Code -->
+<!-- HEADER -->
+<div class="text-center mb-6">
+<h1 class="text-5xl font-black animate-gradient bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 text-transparent bg-clip-text">
+GARUD FIXER
+</h1>
+<p class="text-gray-300 mt-2">Premium Cricket Predictions</p>
+</div>
 
-<!-- End Meta Pixel Code -->
+<!-- PROFILE -->
+<div class="flex gap-4 bg-white/5 p-5 rounded-xl border border-white/10 mb-6">
 
-<body>
-    <div class="hero">
-        <div class="profile-picture">
-            <img style="margin-top: -20px; height: 100px; width: 100px;" src="image.png" alt="cricket">
-        </div>
+<div class="w-24 h-24 rounded-xl bg-gradient-to-r from-yellow-500 to-red-500 p-[3px] glow">
+<img src="https://github.com/mrxsetup/THE-BIG-BULL/blob/main/BIGBULLIMAGE.jpg?raw=true" class="rounded-xl w-full h-full object-cover">
+</div>
 
-        <div class="content">
-            <h1 class="heading1">👑SS PREDICTION👑</h1>
-            <div class="subscriber-counter">
-                <p id="subscriber-count" style="margin: 18px ;font-size: 25px;font-weight: bold; color: white;"><b>74,028  Subscribers</b></p>
-            </div>
-        </div>
+<div class="flex-1">
+<div class="flex gap-2 mb-2">
+<span class="px-3 py-1 bg-yellow-600 rounded-full text-xs font-bold">⭐ Premium Analyst</span>
+<span class="px-3 py-1 bg-red-600 rounded-full text-xs font-bold">LIVE</span>
+</div>
 
-        <br>
-        <div style="margin: 0px 15px; margin-top: -40px;" class="button">
-            <a href="https://t.me/+Pmkpdct0ZHZiYjNl" class="btn btn--stripe">
-        Join Cricket Ka Sabse Bada Tipper <i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
-        </div>
-        <div class="content-wrapper">
-            <div class="points">
-                <ul>
-                    <li><i class="fa-solid fa-share"></i> IPL - 75 / 77 PASS 🏆</li>
-                    <li><i class="fa-solid fa-share"></i> BBL - 67 / 67 PASS 🏆</li>
-                    <li><i class="fa-solid fa-share"></i> PSL - 34 / 35 PASS 🏆</li>
-                </ul>
-            </div>
-        </div>
+<p class="text-yellow-300 text-sm font-semibold">
+👥 <span id="count">0</span>+ Members
+</p>
+</div>
 
-        <div class="button">
-            <a href="https://t.me/+Pmkpdct0ZHZiYjNl " class="btn btn--stripe">
-        SUBSCRIBE FOR FREE <i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
-        </div>
+</div>
 
-    </div>
-    <script>
-        const targetCount = 74028; // Target subscriber count
-        const duration = 10000; // Duration of the counting effect in milliseconds (e.g., 3 seconds)
-        const displayElement = document.getElementById('subscriber-count');
+<!-- TELEGRAM BUTTON -->
+<a href="https://t.me/+rUOd7gGao9AwZDk1" target="_blank" class="block pulse-btn mb-6" onclick="fbq('trackSingle','1227475199310706','Lead');">
 
-        let startTimestamp = null;
+<div class="bg-gradient-to-r from-yellow-600 to-red-600 p-5 rounded-xl shadow-xl shine">
+<div class="flex justify-center items-center gap-3 text-xl font-bold">
+JOIN TELEGRAM NOW
+</div>
+</div>
 
-        function countUp(timestamp) {
-            if (!startTimestamp) startTimestamp = timestamp;
-            const progress = timestamp - startTimestamp;
-            const currentCount = Math.min(Math.floor((progress / duration) * targetCount), targetCount);
+</a>
 
-            // Format the count with a comma for thousands and display it
-            displayElement.textContent = `${currentCount.toLocaleString()} Subscribers`;
+<!-- FEATURES -->
+<div class="space-y-3">
+<div class="bg-white/5 p-4 rounded-xl">✔ Expert Cricket Analysis</div>
+<div class="bg-white/5 p-4 rounded-xl">⚡ Live Match Updates</div>
+<div class="bg-white/5 p-4 rounded-xl">👥 Strong Cricket Community</div>
+</div>
 
-            if (currentCount < targetCount) {
-                requestAnimationFrame(countUp);
-            }
-        }
-        // Start the animation
-        requestAnimationFrame(countUp);
-    </script>
+<!-- FOOTER -->
+<div class="text-center text-xs text-gray-400 mt-6 border-t border-white/10 pt-4">
+For entertainment only<br>
+<span class="text-yellow-400 font-semibold">Advertise BY MRXSETUP</span>
+</div>
+
+</div>
+</div>
+
+<script>
+// Smooth Members Counter (0 → 110,000)
+let count = document.getElementById("count");
+let target = 110000;
+let current = 0;
+
+let counter = setInterval(() => {
+current += Math.ceil(target / 300);
+if (current >= target) {
+current = target;
+clearInterval(counter);
+}
+count.innerText = current.toLocaleString();
+}, 25);
+</script>
 
 </body>
-
 </html>
